@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,7 +14,7 @@ namespace CZBK.ItcastOA.IDAL
     /// </summary>
    public partial interface IDBSession
     {
-       DbContext Db { get; }
+       Context Db { get; }
       // IUserInfoDal UserInfoDal { get; set; }
        bool SaveChanges();
        int ExecuteSql(string sql, params SqlParameter[] pars);

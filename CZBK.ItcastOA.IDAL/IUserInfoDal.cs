@@ -10,7 +10,7 @@ namespace CZBK.ItcastOA.IDAL
    public partial interface IUserInfoDal:IBaseDal<UserInfo>
     {
      //定义自己特有的方法。
-      
+      //定义
     }
   
   

@@ -13,7 +13,7 @@ namespace CZBK.ItcastOA.Model
         {
             return x.ID == y.ID;
         }
-
+        //定义
         public int GetHashCode(ActionInfo obj)
         {
             return obj.GetHashCode();
